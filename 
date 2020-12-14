@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sun 2020-12-13 19:43:18 +05; 1min 10s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 18835 (dockerd)
+      Tasks: 8
+     Memory: 49.5M
+     CGroup: /system.slice/docker.service
+             └─18835 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+дек 13 19:43:16 pc-VirtualBox dockerd[18835]: time="2020-12-13T19:43:16.783148236+05:00" level=warning msg="Your kernel does not support CPU realtime scheduler"
+дек 13 19:43:16 pc-VirtualBox dockerd[18835]: time="2020-12-13T19:43:16.783298989+05:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+дек 13 19:43:16 pc-VirtualBox dockerd[18835]: time="2020-12-13T19:43:16.783433030+05:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+дек 13 19:43:16 pc-VirtualBox dockerd[18835]: time="2020-12-13T19:43:16.784333668+05:00" level=info msg="Loading containers: start."
+дек 13 19:43:17 pc-VirtualBox dockerd[18835]: time="2020-12-13T19:43:17.243512683+05:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+дек 13 19:43:17 pc-VirtualBox dockerd[18835]: time="2020-12-13T19:43:17.707238177+05:00" level=info msg="Loading containers: done."
+дек 13 19:43:18 pc-VirtualBox dockerd[18835]: time="2020-12-13T19:43:18.085774650+05:00" level=info msg="Docker daemon" commit=eeddea2 graphdriver(s)=overlay2 version=20.10.0
+дек 13 19:43:18 pc-VirtualBox dockerd[18835]: time="2020-12-13T19:43:18.090898039+05:00" level=info msg="Daemon has completed initialization"
+дек 13 19:43:18 pc-VirtualBox systemd[1]: Started Docker Application Container Engine.
+дек 13 19:43:18 pc-VirtualBox dockerd[18835]: time="2020-12-13T19:43:18.283872052+05:00" level=info msg="API listen on /run/docker.sock"
